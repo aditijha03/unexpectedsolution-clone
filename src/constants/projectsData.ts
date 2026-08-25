@@ -1,0 +1,126 @@
+import ariya from '../assets/projects/ariya.webp';
+import deltaorbit from '../assets/projects/deltaorbit.webp';
+import downtime from '../assets/projects/downtime.webp';
+import gaimauli from '../assets/projects/gaimauli.webp';
+import newstar from '../assets/projects/newstar.webp';
+import shantabai from '../assets/projects/shantabai.webp';
+import unexpected from '../assets/projects/unexpected.webp';
+import yash from '../assets/projects/yash.webp';
+import yjp from '../assets/projects/yjp.webp';
+
+export interface ProjectItem {
+  id: string;
+  title: string;
+  category: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  link: string;
+  year: string;
+  accentColor: string;
+}
+
+export const projectsData: ProjectItem[] = [
+  {
+    id: "unexpected",
+    title: "Unexpected Solutions 2.0",
+    category: "Brand Engineering & Web Platform",
+    description: "A cinematic, performance-optimized brand identity and web architecture representing next-generation enterprise solutions.",
+    image: unexpected,
+    technologies: ["React", "TypeScript", "GSAP", "Vite", "Tailwind CSS"],
+    link: "/contact?project=unexpected",
+    year: "2026",
+    accentColor: "#5D46D8"
+  },
+  {
+    id: "ariya",
+    title: "Ariya Jwellery Shop",
+    category: "Healthcare & AI Telemetry",
+    description: "Pre-clinical telemetry and patient orchestration platform built on zero-trust cloud data systems and secure real-time data flow.",
+    image: ariya,
+    technologies: ["Next.js", "Python", "GraphQL", "Tailwind CSS"],
+    link: "/contact?project=ariya",
+    year: "2025",
+    accentColor: "#8B7FF4"
+  },
+    {
+    id: "newstar",
+    title: "Newstar RealEstate",
+    category: "Entertainment & Streaming CDN",
+    description: "High-throughput content delivery hub and subscription system serving millions of stream sessions daily.",
+    image: newstar,
+    technologies: ["Svelte", "Golang", "Kubernetes", "WebRTC"],
+    link: "/contact?project=newstar",
+    year: "2026",
+    accentColor: "#F59E0B"
+  },
+  {
+    id: "yash",
+    title: "Yash Furnitures",
+    category: "Creative Showcase Platform",
+    description: "Editorial portfolio showcase focusing on ultra-minimal design systems and custom WebGL shaders.",
+    image: yash,
+    technologies: ["React", "Three.js", "GSAP", "Tailwind CSS"],
+    link: "/contact?project=yash",
+    year: "2025",
+    accentColor: "#8B5CF6"
+  },
+  {
+    id: "shantabai",
+    title: "Shantabai HomeCook",
+    category: "Social Impact & Community Portal",
+    description: "Philanthropic distribution engine and community platform managing donor resources and program allocations globally.",
+    image: shantabai,
+    technologies: ["React", "Strapi CMS", "GraphQL", "Tailwind CSS"],
+    link: "/contact?project=shantabai",
+    year: "2024",
+    accentColor: "#EC4899"
+  },
+  {
+    id: "deltaorbit",
+    title: "Delta Orbit",
+    category: "Aerospace Intelligence & Analytics",
+    description: "Interactive telemetry dashboards and predictive orbital pathing mechanics for satellite constellation management.",
+    image: deltaorbit,
+    technologies: ["React", "WebGL", "Three.js", "Node.js", "Docker"],
+    link: "/contact?project=deltaorbit",
+    year: "2026",
+    accentColor: "#2563EB"
+  },
+  {
+    id: "downtime",
+    title: "Downtime Monitor",
+    category: "Infrastructure DevOps SaaS",
+    description: "Real-time global server health monitoring and auto-healing infrastructure dashboard displaying sub-second metrics.",
+    image: downtime,
+    technologies: ["TypeScript", "Rust", "WebSockets", "Go"],
+    link: "/contact?project=downtime",
+    year: "2025",
+    accentColor: "#DC2626"
+  },
+  {
+    id: "gaimauli",
+    title: "Gaimauli Agro ",
+    category: "Supply Chain & Automation",
+    description: "Algorithmic crop yield logistics and supply chain optimization platform matching cold chain transport networks.",
+    image: gaimauli,
+    technologies: ["React Native", "Express", "PostgreSQL", "AWS"],
+    link: "/contact?project=gaimauli",
+    year: "2025",
+    accentColor: "#10B981"
+  },
+
+  
+  {
+    id: "yjp",
+    title: "YJP Jwellers",
+    category: "Direct-to-Consumer Commerce",
+    description: "Bespoke checkout orchestration and inventory syncing across hundreds of retail distribution branches.",
+    image: yjp,
+    technologies: ["Next.js", "Shopify Hydrogen", "Node.js", "Redis"],
+    link: "/contact?project=yjp",
+    year: "2026",
+    accentColor: "#06B6D4"
+  }
+];
+export default projectsData;
